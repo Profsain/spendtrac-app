@@ -17,9 +17,17 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+   <body class="border border-dark" style="min-height: 100vh;">
+    <% if current_user %>
+      <%= render partial: "shared/navbar" %>
+      <p class="username">Welcome <%= current_user.name %>!</p>
+    <% end %>
+
+    <div class="container">
+      <%if flash[:notice]%><p class="notice alert alert-success"><%= notice %></p> <%end%>
+      <%if flash[:alert]%> <p class="alert alert alert-danger"><%= alert %></p> <%end%>
+      <%= yield %>
+    </div>
+
   </body>
 </html>

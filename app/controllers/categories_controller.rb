@@ -1,6 +1,6 @@
 class CategoriesController < ApplicationController
-  # load_and_authorize_resource except: %i[public]
-  # before_action :authenticate_user!, except: [:index]
+  load_and_authorize_resource except: %i[public]
+  before_action :authenticate_user!, except: [:index]
 
   def index
     return unless current_user

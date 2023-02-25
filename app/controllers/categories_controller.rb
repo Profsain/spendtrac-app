@@ -12,6 +12,10 @@ class CategoriesController < ApplicationController
   def show
     @category = Category.find(params[:id])
     @expenditures = @category.expenditures.order('created_at DESC')
+    @expenditures.each do |expenditure|
+      puts '=============++++++++++++++++================'
+      puts expenditure.name.inspect
+    end
   end
 
   def new

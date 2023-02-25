@@ -11,8 +11,10 @@
           <p class="m-1 gray-text fs-5">TOTAL SPENDING</p>
           <p class="fw-semibold m-1 gray-text fs-5">$<%= @expenditures.sum(:amount) %></p>
         </li>
+        
         <% unless @expenditures.empty? %>
           <% @expenditures.each_with_index do |spen, expenditure| %>
+            <%= @expenditure %>
             <li class="list-group-item">
               <div d-flex flex-column>
                 <p class="card-text gray-text">Transaction N°<%=expenditure + 1%>: <span class="fw-semibold ms-2"><%=spen.name%></span></p>

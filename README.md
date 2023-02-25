@@ -128,6 +128,10 @@ rspec spec
 - Twitter: [@twitterhandle](https://twitter.com/profsain)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/profsain)
 
+## Future Features <a name="future-features"></a>
+- Add social media login/signup
+- Add a profile page
+- Add a search feature
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!

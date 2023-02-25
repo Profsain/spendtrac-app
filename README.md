@@ -154,4 +154,4 @@ I would like to thank Microverse team and Micronauts for their support
 
 ## 📝 License
 
-This project is [MIT]() licensed.
+This project is [MIT](./LICENSE.md) licensed.

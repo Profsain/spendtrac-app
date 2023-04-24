@@ -85,6 +85,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] 
   database: spendtrac_app_production
   username: spendtrac_app
   password: <%= ENV["SPENDTRAC_APP_DATABASE_PASSWORD"] %>
